@@ -54,6 +54,7 @@ html ,body {
     margin-inline: 0px;
     padding-bottom: 37px;
     margin-inline: 0px;
+    gap: 12px;
 }
 
 h4 {
