@@ -1,6 +1,12 @@
 html ,body {
     width: 100%;  
     height: 100%;  
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Norse-Bold.otf') format('opentype');
 }
 
 .container {
@@ -18,11 +24,13 @@ html ,body {
 }
 
 .section-two {
-    width: 100%;   
-    height: 100%;  
-    margin-left: 25px;
-    margin-right: 60px;
-    margin-top: 50px;
+    /*width: 100%;   
+    height: 100%; */ 
+    padding-left: 25px;
+    padding-right: 60px;
+    padding-top: 50px;
+    margin-left: 0px;
+    background-color: rgb(242,242,242);
 }
 
 .logo {
@@ -35,12 +43,17 @@ html ,body {
     justify-content:center;
     margin-top: 107px;
     padding-inline: 45px;
+    font-family: 'MyCustomFont', sans-serif; 
 }
 
 .space {
     display: flex;
     flex-direction: column;
     justify-content: center; 
+    background-color: white;
+    margin-inline: 0px;
+    padding-bottom: 37px;
+    margin-inline: 0px;
 }
 
 h4 {
@@ -59,4 +72,28 @@ h4 {
 .cols {
     display: flex;
     gap: 70px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 10px gray;
+}
+
+button {
+    margin-top: 25px;
+    background-color: #596D48;
+    color: white;
+    width: 145px;
+    height: 45px; 
+    border: none;
+    border-radius: 7px;
+}
+
+span { 
+    color: #596D48;
 }
